@@ -1,0 +1,391 @@
+﻿/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+    background-color: #E7F0DC; /* Background color */
+    color: black; /* Text color */
+    line-height: 1.6;
+    padding: 20px;
+    direction: ltr; /* Left-to-right text direction */
+    text-align: left; /* Ensures text aligns to the left */
+}
+
+/* Basic container for each page */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #597445; /* Header color */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    gap: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+    header #text {
+        flex: 1; /* Optional: Makes both boxes take equal space */
+        padding-left: 250px;
+     }
+    header #logo{
+        flex: 0;/* Optional: Makes both boxes take equal space */
+        padding-right: 100px;
+        }
+
+    header #text h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    header #text  h2 {
+        font-size: 1.5em;
+    }
+
+    header #logo img {
+        width: 150px;
+    }
+/* Navigation Menu */
+nav {
+    background-color: #729762;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2em;
+                transition: color 0.3s ease;
+            }
+
+                nav ul li a:hover {
+                    color: #C3B091;
+                }
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    margin: 50px 0;
+}
+
+    #hero img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #hero h3 {
+        font-size: 2em;
+        margin-top: 20px;
+        color: #1F4529; /* Header color */
+    }
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+/* About the Soldier Page */
+#biography {
+    margin-bottom: 40px;
+}
+
+    #biography p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        text-align: right;
+        direction: ltr;
+    }
+
+#quotes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    #quotes h3 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        color: #1F4529; /* Header color */
+    }
+
+    #quotes p {
+        font-style: italic;
+        font-size: 1.2em;
+        color: #555;
+    }
+
+/* Service Page */
+#service-details {
+    margin-bottom: 50px;
+}
+
+    #service-details p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: #333;
+    }
+
+#service-timeline {
+    margin-top: 30px;
+}
+
+    #service-timeline ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #service-timeline li {
+        background-color: #729762; /* Button color */
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+        #service-timeline li span {
+            font-weight: bold;
+        }
+
+/* Tributes & Memorials Page */
+#memorial-service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+hr.solid{
+    border-top: 3px solid black;
+}
+    #memorial-service h3 {
+        font-size: 1.8em;
+        color: #1F4529; /* Header color */
+        margin-bottom: 20px;
+    }
+
+#tribute-messages {
+    margin-top: 30px;
+}
+
+    #tribute-messages form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tribute-messages textarea {
+        width: 60%;
+        height: 150px;
+        padding: 10px;
+        font-size: 1.1em;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        resize: none;
+        margin-bottom: 15px;
+    }
+
+    #tribute-messages button {
+        background-color: #47663B; /* Button color */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        #tribute-messages button:hover {
+            background-color: #36512A; /* Darker button hover color */
+        }
+
+/* Gallery Page */
+#photo-gallery, #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    #photo-gallery img {
+        width: 30%;
+        margin: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+
+        #photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+    footer p {
+        font-size: 1em;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero h3 {
+        font-size: 1.6em;
+    }
+
+    #photo-gallery img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    #tribute-messages textarea {
+        width: 90%;
+    }
+
+    #tribute-messages button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    #hero h3 {
+        font-size: 1.3em;
+    }
+
+    #biography p,
+    #service-details p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+/* General styles for the product card */
+.product-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+   
+/* Product image styling */
+    .product-card img {
+        width: 100%;
+        height: auto;
+        
+        border-bottom: solid #777 1px;
+    }
+
+
+/* Product title */
+.product-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Product price */
+.product-card span {
+    padding-right: 10px;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Button styling */
+    .product-card button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #729762;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .product-card button:hover {
+            background-color: #597445;
+      
+           }
+
+nav ul li:first-child a {
+    padding: 0;
+    font-size: 1.5em; /* Make the icon slightly larger */
+}
+
+    nav ul li:first-child a i {
+        color: #fff; /* Icon color */
+        transition: color 0.3s ease;
+    }
+
+    nav ul li:first-child a:hover i {
+        color: #ff9900; /* Icon hover color */
+    }
+
+
+
+@media (max-width: 650px) {
+    #logo {
+        display:none;
+    }
+
+    header #text {
+        padding-left: 0px;
+    }
+
+    
+}
